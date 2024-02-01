@@ -49,8 +49,8 @@ public class BMICalculator {
         return round(bmi);
     }
 
-    public double round (double value) {
-        return Math.round(value);
+    private double round(double value) {
+        return Math.round(value * 100.0) / 100.0;
     }
 
 
@@ -118,7 +118,7 @@ public class BMICalculator {
 
     public static void main(String[] args) {
 
-        BMICalculator bmiCalculator = new BMICalculator("Julian", "Irmler", 185, 80.0, 'M' );
+        BMICalculator bmiCalculator = new BMICalculator("Julian", "Irmler", 180, 120.0, 'M' );
         double bmi = bmiCalculator.calculateBMI();
         int bmiCategory = bmiCalculator.caluclateBMICategory();
 
