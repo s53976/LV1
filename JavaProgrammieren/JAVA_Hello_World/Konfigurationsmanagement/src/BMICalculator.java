@@ -126,6 +126,7 @@ public class BMICalculator {
         System.out.println("BMI Category: " + getBMICategoryLabel(bmiCategory, bmiCalculator.getGender()));
     }
 
+
 }
 
 
