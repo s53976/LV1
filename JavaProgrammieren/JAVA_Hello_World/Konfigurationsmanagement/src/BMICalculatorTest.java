@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BMICalculatorTest {
 
+
     @org.junit.jupiter.api.Test
     void getBodyHeight() {
         BMICalculator BMICalculator = new BMICalculator("Julian", "Irmler", 12, 12.5, 'M');
