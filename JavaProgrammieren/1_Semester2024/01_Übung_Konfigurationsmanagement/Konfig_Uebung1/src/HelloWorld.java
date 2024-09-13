@@ -3,5 +3,6 @@ public class HelloWorld {
         System.out.println("Hello World Konfigurationsmanagement");
         System.out.println("Test");
         System.out.println("Test");
+        System.out.println("Test");
     }
 }
