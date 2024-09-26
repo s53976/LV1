@@ -14,6 +14,12 @@ public class Calculator {
         System.out.println(++j);
         a += 1; // Ist das selbe wie a++ (es wird um eines erhöht)
 
+        String lastNameA = new String ("Mustermann");
+        String lastNameB = new String ("Mustermann");
+
+        System.out.println(lastNameA == lastNameB);
+        System.out.println(lastNameA.equals(lastNameB));
+
 
 
 
