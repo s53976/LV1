@@ -6,10 +6,20 @@ public class Calculator {
         int a = 2;
         int b = 5;
         int ergebnis = 0;
-
         ergebnis = a + b;
-
         System.out.println(Name + " Ergebnis " + ergebnis);
+
+
+        int j = 3;
+        System.out.println(++j);
+        a += 1; // Ist das selbe wie a++ (es wird um eines erhöht)
+
+
+
+
+
+
+
 
 
 
