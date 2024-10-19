@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Student {
     private int matNr;
     private String FullName;
@@ -30,5 +32,18 @@ public class Student {
                 "matNr=" + matNr +
                 ", FullName='" + FullName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return matNr == student.matNr && Objects.equals(FullName, student.FullName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(matNr, FullName);
     }
 }

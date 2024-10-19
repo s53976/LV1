@@ -23,12 +23,26 @@ public class StudentListDemo {
         for(Student student : students) {
             System.out.println(student);
         }
+        Student searchStudent = new Student(1, "Susi Sorglos");
+        boolean isContained = false;
 
-        Student searchStudent = new Student(2, "Susi Mustermann");
-        boolean isContained = students.contains(searchStudent);
+        for (Student student : students) {
+            if (student.equals(searchStudent)) {
+                isContained = true;
+                break;
+            }
+        }
+
         System.out.println("isContained = " + isContained);
 
 
+        boolean containsMax = students.contains(new Student(3,"Max Mustermann"));
+        System.out.println("containsMax = " + containsMax);
+
+        boolean containSusi = students.equals("Susi Sorglos");
+        System.out.println("containSusi = " + containSusi);
 
     }
+
+
 }
