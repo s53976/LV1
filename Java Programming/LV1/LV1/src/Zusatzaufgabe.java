@@ -5,7 +5,8 @@ public class Zusatzaufgabe {
 
         if (uhrzeit >= 6 && uhrzeit < 9) {
             System.out.println("Früh");
-        }if  (uhrzeit >= 9 && uhrzeit < 12) {
+        }
+        if (uhrzeit >= 9 && uhrzeit < 12) {
             System.out.println("Vormittag");
         }
         if (uhrzeit >= 12 && uhrzeit < 16) {

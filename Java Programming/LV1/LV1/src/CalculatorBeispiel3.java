@@ -1,39 +1,48 @@
 public class CalculatorBeispiel3 {
 
     public static void main(String[] args) {
-        addi(3,4);
-        sub(5,3);
-        div(10,2);
-        modulo(30,3);
+
+        addAddition(3, 4);
+        addSubtraktion(5, 3);
+        addDivision(10, 2);
+        addModulo(30, 3);
+
     }
 
     //Addition
 
-    public static int addi (int a, int b) {
+    public static int addAddition(int a, int b) {
         int result = a + b;
-        System.out.println("Addition " + result);
+        System.out.println("Result Addition " + result);
         return result;
     }
 
     //Subtraktion
-    public static int sub (int a, int b) {
+    public static int addSubtraktion(int a, int b) {
         int result = a - b;
-        System.out.println("Subtraktion:  " + result);
+        System.out.println("Result Subtraktion:  " + result);
         return result;
     }
 
     //Division
-    public static int div (int a, int b) {
-        int result = a / b;
-        System.out.println("Division " +result);
-        return result;
+    public static int addDivision(int a, int b) {
+        if (b != 0) {
+            int result = a / b;
+            System.out.println("Result Division " + result);
+
+        } else {
+            System.out.println("Division by Zero not possible!");
+        }
+        return 0;
     }
+
 
     //Modulo
-    public static int modulo (int a, int b) {
+    public static int addModulo(int a, int b) {
         int result = a % b;
-        System.out.println("Modulo " +result);
+        System.out.println("Result Modulo " + result);
         return result;
     }
-
 }
+
+

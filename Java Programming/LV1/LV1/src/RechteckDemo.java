@@ -4,7 +4,7 @@ public class RechteckDemo {
         int laenge = 0;
 
         int umfang = 0;
-        umfang =2 * (breite + laenge);
+        umfang = 2 * (breite + laenge);
 
         int flaeche = 0;
         flaeche = breite * laenge;

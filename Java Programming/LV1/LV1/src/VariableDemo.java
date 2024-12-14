@@ -3,7 +3,7 @@ public class VariableDemo {
         String vorName = "Max";
         String nachName = "Mustermann";
 
-        System.out.println(vorName+ " " + " "+ nachName);
+        System.out.println(vorName + " " + " " + nachName);
 
     }
 }
