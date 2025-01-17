@@ -39,14 +39,13 @@ public abstract class Book {
         double sum = 0;
         double count = 0;
 
+        if (ratings.size() == 0) {
+            return -1;
+        }
         for (Rating rating : ratings) {
-            if (ratings.size() == 0) {
-                return -1;
-            } else
             sum += rating.getStars();
             count++;
         }
-
         return (count/sum);
     }
 

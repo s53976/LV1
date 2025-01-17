@@ -13,8 +13,8 @@ public abstract class PersonAnalyzer {
         return persons;
     }
 
-    public void setPersons (ArrayList <Person> persons) {
-
+    public void setPersons(ArrayList<Person> persons) {
+        this.persons = persons;
     }
 
     public abstract void analyze () ;

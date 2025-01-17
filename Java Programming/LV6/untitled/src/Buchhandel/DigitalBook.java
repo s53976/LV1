@@ -5,7 +5,7 @@ public class DigitalBook extends Book{
     private int fileSize;
 
 
-    public DigitalBook(String title, double price, String author, String category) {
+    public DigitalBook(String title, double price, String author, String category, String fileName, int fileSize) {
         super(title, price, author, category);
         this.fileName = fileName;
         this.fileSize = fileSize;
@@ -19,6 +19,8 @@ public class DigitalBook extends Book{
         System.out.println("ratings = " + ratings);
         System.out.println("price = " + price);
         System.out.println("bookID = " + bookID);
+        System.out.println("fileName = " + fileName);
+        System.out.println("fileSize = " + fileSize);
     }
 
 
